@@ -668,7 +668,7 @@ First we have to fetch the data from OpenML, and split it into a train and test 
   import pandas.util.testing as tm
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;gama.GamaRegressor.GamaRegressor at 0x2a0ae8430&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;gama.GamaRegressor.GamaRegressor at 0x105cba7c0&gt;
 </pre></div>
 </div>
 </div>
@@ -680,7 +680,7 @@ First we have to fetch the data from OpenML, and split it into a train and test 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.2963683906132034
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.40383010604765646
 </pre></div>
 </div>
 </div>
@@ -715,34 +715,38 @@ We do this by parsing the log GAMA created (filename set by <code class="docutil
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>preprocessing default after 0.0030s.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>preprocessing default after 0.0008s.
 
-search AsyncEA after 53.0981s.
+search AsyncEA after 53.0850s.
 
-postprocess BestFitPostProcessing after 0.0473s.
+postprocess BestFitPostProcessing after 0.0205s.
 
-preprocessing default after 0.1213s.
+preprocessing default after 0.0865s.
 
-search AsyncEA after 53.1553s.
+search AsyncEA after 53.0857s.
 
-postprocess BestFitPostProcessing after 22.4502s.
+postprocess BestFitPostProcessing after 6.5187s.
 
-preprocessing default after 0.0908s.
+preprocessing default after 0.0865s.
 
-search AsyncEA after 41.1320s.
+search AsyncEA after 41.0978s.
 
-postprocess EnsemblePostProcessing after 0.0050s.
+postprocess EnsemblePostProcessing after 0.0028s.
 
-preprocessing default after 0.0008s.
+preprocessing default after 0.0009s.
 
-search AsyncEA after 53.0950s.
+search AsyncEA after 53.1030s.
 
-postprocess BestFitPostProcessing after 0.1085s.
+postprocess BestFitPostProcessing after 0.0173s.
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/jvanscho/miniforge3/lib/python3.9/site-packages/gama/logging/GamaReport.py:73: DtypeWarning: Columns (1,3,4) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(fh, sep=&quot;;&quot;, header=None, index_col=False)
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">0</span><span class="n">t</span><span class="o">/</span><span class="mi">5</span><span class="n">d8ttqzd773fy0wq3h5db0xr0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_2304</span><span class="o">/</span><span class="mf">2342031545.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">0</span><span class="n">t</span><span class="o">/</span><span class="mi">5</span><span class="n">d8ttqzd773fy0wq3h5db0xr0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_60406</span><span class="o">/</span><span class="mf">2342031545.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">gama.logging.GamaReport</span> <span class="kn">import</span> <span class="n">GamaReport</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">report</span> <span class="o">=</span> <span class="n">GamaReport</span><span class="p">(</span><span class="n">log_directory</span><span class="o">=</span><span class="s2">&quot;gama_log&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">evaluations</span> <span class="o">=</span> <span class="n">transform_evaluations</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">evaluations</span><span class="p">)</span>

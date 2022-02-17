@@ -25,7 +25,7 @@ evaluations.sample(5).sort_values(by='n')  # Show 5 random samples from the data
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mValueError[0m                                Traceback (most recent call last)
-[0;32m/var/folders/0t/5d8ttqzd773fy0wq3h5db0xr0000gn/T/ipykernel_2304/2342031545.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/var/folders/0t/5d8ttqzd773fy0wq3h5db0xr0000gn/T/ipykernel_60406/2342031545.py[0m in [0;36m<module>[0;34m[0m
 [1;32m      1[0m [0;32mfrom[0m [0mgama[0m[0;34m.[0m[0mlogging[0m[0;34m.[0m[0mGamaReport[0m [0;32mimport[0m [0mGamaReport[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 2[0;31m [0mreport[0m [0;34m=[0m [0mGamaReport[0m[0;34m([0m[0mlog_directory[0m[0;34m=[0m[0;34m"gama_log"[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      3[0m [0mevaluations[0m [0;34m=[0m [0mtransform_evaluations[0m[0;34m([0m[0mreport[0m[0;34m.[0m[0mevaluations[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
