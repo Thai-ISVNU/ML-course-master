@@ -585,12 +585,15 @@ Average cross-validation score: 0.98
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SVM component: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pipe</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;svm&#39;</span><span class="p">]))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SVM component: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pipe</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;svm&#39;</span><span class="p">]</span><span class="n">f</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>SVM component: LinearSVC()
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/var/folders/0t/5d8ttqzd773fy0wq3h5db0xr0000gn/T/ipykernel_17470/4077450939.py&quot;</span><span class="gt">, line </span><span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;SVM component: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pipe</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;svm&#39;</span><span class="p">]</span><span class="n">f</span><span class="p">))</span>
+                                                            <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
@@ -623,7 +626,7 @@ Average cross-validation score: 0.98
 </div>
 </div>
 <p>Visualization of a pipeline <code class="docutils literal notranslate"><span class="pre">fit</span></code> and <code class="docutils literal notranslate"><span class="pre">predict</span></code></p>
-<img src="../images/07_pipelines.png" alt="ml" style="width: 700px;"/><div class="section" id="using-pipelines-in-grid-searches">
+<img src="https://raw.githubusercontent.com/ML-course/master/master/notebooks/images/07_pipelines.png" alt="ml" style="width: 700px;"/><div class="section" id="using-pipelines-in-grid-searches">
 <h3>Using Pipelines in Grid-searches<a class="headerlink" href="#using-pipelines-in-grid-searches" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>We can use the pipeline as a single estimator in <code class="docutils literal notranslate"><span class="pre">cross_val_score</span></code> or <code class="docutils literal notranslate"><span class="pre">GridSearchCV</span></code></p></li>
