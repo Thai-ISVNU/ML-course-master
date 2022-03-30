@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -392,12 +390,12 @@
   <a class="reference internal nav-link" href="#overview">
    Overview
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#convolutions">
+   Convolutions
+  </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#convolution">
-     Convolution
-    </a>
-   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#demonstration-on-google-streetview-data">
      Demonstration on Google streetview data
@@ -451,12 +449,12 @@
   <a class="reference internal nav-link" href="#convolutional-nets-in-practice">
    Convolutional nets in practice
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cats-vs-dogs">
-   Cats vs Dogs
-  </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-with-keras">
+     Example with Keras
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#data-generators">
      Data generators
@@ -466,13 +464,6 @@
     <a class="reference internal nav-link" href="#training">
      Training
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#results">
-       Results
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#data-augmentation">
@@ -496,23 +487,23 @@
      Visualizing the learned filters
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-class-activation">
+     Visualizing class activation
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualizing-class-activation">
-   Visualizing class activation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-pretrained-networks">
-   Using pretrained networks
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-pre-trained-networks-3-ways">
-   Using pre-trained networks: 3 ways
+  <a class="reference internal nav-link" href="#transfer-learning">
+   Transfer learning
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-pre-trained-networks-3-ways">
+     Using pre-trained networks: 3 ways
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#fast-feature-extraction-without-data-augmentation">
      Fast feature extraction (without data augmentation)
@@ -559,12 +550,12 @@
   <a class="reference internal nav-link" href="#overview">
    Overview
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#convolutions">
+   Convolutions
+  </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#convolution">
-     Convolution
-    </a>
-   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#demonstration-on-google-streetview-data">
      Demonstration on Google streetview data
@@ -618,12 +609,12 @@
   <a class="reference internal nav-link" href="#convolutional-nets-in-practice">
    Convolutional nets in practice
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#cats-vs-dogs">
-   Cats vs Dogs
-  </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-with-keras">
+     Example with Keras
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#data-generators">
      Data generators
@@ -633,13 +624,6 @@
     <a class="reference internal nav-link" href="#training">
      Training
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#results">
-       Results
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#data-augmentation">
@@ -663,23 +647,23 @@
      Visualizing the learned filters
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualizing-class-activation">
+     Visualizing class activation
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualizing-class-activation">
-   Visualizing class activation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-pretrained-networks">
-   Using pretrained networks
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-pre-trained-networks-3-ways">
-   Using pre-trained networks: 3 ways
+  <a class="reference internal nav-link" href="#transfer-learning">
+   Transfer learning
   </a>
   <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-pre-trained-networks-3-ways">
+     Using pre-trained networks: 3 ways
+    </a>
+   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#fast-feature-extraction-without-data-augmentation">
      Fast feature extraction (without data augmentation)
@@ -775,8 +759,8 @@
         <span class="n">zip_ref</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">model_dir</span><span class="p">)</span>
     <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
 
-<span class="n">download_all_data</span> <span class="o">=</span> <span class="kc">False</span>    
-<span class="k">if</span> <span class="n">download_all_data</span><span class="p">:</span>
+<span class="n">download_cats</span> <span class="o">=</span> <span class="kc">False</span>    
+<span class="k">if</span> <span class="n">download_cats</span><span class="p">:</span>
     <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://drive.google.com/uc?id=1xojwqGMrwiWLBBcVNXurBZ0OyFqsS_V0&#39;</span>
     <span class="n">output</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_dir</span><span class="p">,</span><span class="s2">&quot;lecture9_data.zip&quot;</span><span class="p">)</span>
     <span class="n">gdown</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">,</span> <span class="n">quiet</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -787,8 +771,9 @@
 </div>
 </div>
 </div>
-<div class="section" id="convolution">
-<h3>Convolution<a class="headerlink" href="#convolution" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="convolutions">
+<h2>Convolutions<a class="headerlink" href="#convolutions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Operation that transforms an image by sliding a smaller image (called a <em>filter</em> or <em>kernel</em> ) over the image and multiplying the pixel values</p>
 <ul>
@@ -1021,7 +1006,6 @@
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/09 - Convolutional Neural Networks_10_0.png" src="../_images/09 - Convolutional Neural Networks_10_0.png" />
-</div>
 </div>
 </div>
 <div class="section" id="demonstration-on-google-streetview-data">
@@ -1487,7 +1471,8 @@
 </ul>
 </li>
 </ul>
-<p>Example with Keras:</p>
+<div class="section" id="example-with-keras">
+<h3>Example with Keras<a class="headerlink" href="#example-with-keras" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Conv2D</span></code> for 2D convolutional layers</p>
 <ul>
@@ -1727,9 +1712,7 @@ _________________________________________________________________
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">,</span> <span class="n">file_pi</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="cats-vs-dogs">
-<h2>Cats vs Dogs<a class="headerlink" href="#cats-vs-dogs" title="Permalink to this headline">¶</a></h2>
+<p>Cats vs Dogs</p>
 <ul class="simple">
 <li><p>A more realistic dataset: <a class="reference external" href="https://www.kaggle.com/c/dogs-vs-cats/data">Cats vs Dogs</a></p>
 <ul>
@@ -1805,6 +1788,7 @@ _________________________________________________________________
     <span class="n">dst</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">validation_dogs_dir</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
     <span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">dst</span><span class="p">)</span>
 </pre></div>
+</div>
 </div>
 <div class="section" id="data-generators">
 <h3>Data generators<a class="headerlink" href="#data-generators" title="Permalink to this headline">¶</a></h3>
@@ -2006,8 +1990,7 @@ _________________________________________________________________
     <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">history</span><span class="o">.</span><span class="n">history</span><span class="p">,</span> <span class="n">file_pi</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="section" id="results">
-<h4>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h4>
+<p>Results</p>
 <ul class="simple">
 <li><p>The network seems to be overfitting. Validation accuracy is stuck at 75% while the training accuracy reaches 100%</p></li>
 <li><p>There are many things we can do:</p>
@@ -2029,7 +2012,6 @@ _________________________________________________________________
 </div>
 <div class="cell_output docutils container">
 <img alt="../_images/09 - Convolutional Neural Networks_72_0.png" src="../_images/09 - Convolutional Neural Networks_72_0.png" />
-</div>
 </div>
 </div>
 </div>
@@ -2831,9 +2813,8 @@ _________________________________________________________________
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="visualizing-class-activation">
-<h2>Visualizing class activation<a class="headerlink" href="#visualizing-class-activation" title="Permalink to this headline">¶</a></h2>
+<h3>Visualizing class activation<a class="headerlink" href="#visualizing-class-activation" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>We can also visualize which part of the input image had the greatest influence on the final classification</p>
 <ul>
@@ -3055,8 +3036,9 @@ _________________________________________________________________
 </div>
 </div>
 </div>
-<div class="section" id="using-pretrained-networks">
-<h2>Using pretrained networks<a class="headerlink" href="#using-pretrained-networks" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="transfer-learning">
+<h2>Transfer learning<a class="headerlink" href="#transfer-learning" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We can re-use pretrained networks instead of training from scratch</p></li>
 <li><p>Learned features can be a generic model of the visual world</p></li>
@@ -3137,9 +3119,8 @@ _________________________________________________________________
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="using-pre-trained-networks-3-ways">
-<h2>Using pre-trained networks: 3 ways<a class="headerlink" href="#using-pre-trained-networks-3-ways" title="Permalink to this headline">¶</a></h2>
+<h3>Using pre-trained networks: 3 ways<a class="headerlink" href="#using-pre-trained-networks-3-ways" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Fast feature extraction (similar task, little data)</p>
 <ul>
@@ -3163,7 +3144,8 @@ _________________________________________________________________
 </ul>
 </li>
 </ul>
-<img src="https://raw.githubusercontent.com/ML-course/master/master/notebooks/images/pretraining.png?raw=1" alt="ml" style="width: 700px;  margin-left: auto; margin-right: auto;"/><div class="section" id="fast-feature-extraction-without-data-augmentation">
+<img src="https://raw.githubusercontent.com/ML-course/master/master/notebooks/images/pretraining.png?raw=1" alt="ml" style="width: 700px;  margin-left: auto; margin-right: auto;"/></div>
+<div class="section" id="fast-feature-extraction-without-data-augmentation">
 <h3>Fast feature extraction (without data augmentation)<a class="headerlink" href="#fast-feature-extraction-without-data-augmentation" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Run every batch through the pre-trained convolutional base</p></li>
