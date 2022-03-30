@@ -1719,7 +1719,7 @@ Topic:  3
 <li><p>Simply flattening the tensor learns a direct mapping. This destroys the word order.</p></li>
 <li><p>A recurrent neural network (RNN) could leverage the exact sequence of the words</p>
 <ul>
-<li><p>Can be slow to train</p></li>
+<li><p>Can be slow to train, have limited memory of previous terms</p></li>
 </ul>
 </li>
 <li><p>A 1D convolutional network can also leverage locality (learn local patterns)</p>
@@ -1728,7 +1728,12 @@ Topic:  3
 <li><p>Works well for simple tasks like classification and forecasting</p></li>
 </ul>
 </li>
-<li><p>Attention-based</p></li>
+<li><p>Attention-based networks can learn which previous terms to pay more attention to</p>
+<ul>
+<li><p>Mostly for sequence-to-sequence tasks (e.g. language translation)</p></li>
+<li><p>Transformers: use attention only, no RNNs (<a class="reference external" href="https://arxiv.org/abs/1706.03762">paper</a>, <a class="reference external" href="https://www.youtube.com/watch?v=iDulhoQ2pro">video</a>)</p></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
